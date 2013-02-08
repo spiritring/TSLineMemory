@@ -27,6 +27,16 @@ int main(int argc, const char * argv[])
         
         [pC release];
         
+        NSArray* myList = @[@"haha",@"hoho"];
+        for (int i = 0 ; i < [myList count]; i++) {
+            NSLog(@"string:%@", [myList objectAtIndex:i]);
+        }
+        
+        for (NSObject* obj in myList) {
+            NSLog(@"string:%@", obj);
+        }
+        
+        
         NSString* strList = @"1,2,3,344,5,6,7";
         NSArray* list = [strList componentsSeparatedByString:@","];
         for (int i = 0 ; i < [list count]; i++) {
