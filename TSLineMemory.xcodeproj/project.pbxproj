@@ -10,6 +10,8 @@
 		30C1C92616C13F000008F0A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C1C92516C13F000008F0A4 /* Foundation.framework */; };
 		30C1C92916C13F000008F0A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1C92816C13F000008F0A4 /* main.m */; };
 		30C1C92D16C13F000008F0A4 /* TSLineMemory.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30C1C92C16C13F000008F0A4 /* TSLineMemory.1 */; };
+		30C1C94116C13F4A0008F0A4 /* TSClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1C94016C13F4A0008F0A4 /* TSClass.m */; };
+		30C1C94416C14C990008F0A4 /* TSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C1C94316C14C990008F0A4 /* TSString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		30C1C92816C13F000008F0A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30C1C92B16C13F000008F0A4 /* TSLineMemory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TSLineMemory-Prefix.pch"; sourceTree = "<group>"; };
 		30C1C92C16C13F000008F0A4 /* TSLineMemory.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TSLineMemory.1; sourceTree = "<group>"; };
+		30C1C93F16C13F4A0008F0A4 /* TSClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSClass.h; sourceTree = "<group>"; };
+		30C1C94016C13F4A0008F0A4 /* TSClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSClass.m; sourceTree = "<group>"; };
+		30C1C94216C14C990008F0A4 /* TSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSString.h; sourceTree = "<group>"; };
+		30C1C94316C14C990008F0A4 /* TSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				30C1C92816C13F000008F0A4 /* main.m */,
+				30C1C93F16C13F4A0008F0A4 /* TSClass.h */,
+				30C1C94016C13F4A0008F0A4 /* TSClass.m */,
+				30C1C94216C14C990008F0A4 /* TSString.h */,
+				30C1C94316C14C990008F0A4 /* TSString.m */,
 				30C1C92C16C13F000008F0A4 /* TSLineMemory.1 */,
 				30C1C92A16C13F000008F0A4 /* Supporting Files */,
 			);
@@ -140,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C1C92916C13F000008F0A4 /* main.m in Sources */,
+				30C1C94116C13F4A0008F0A4 /* TSClass.m in Sources */,
+				30C1C94416C14C990008F0A4 /* TSString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +165,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -183,7 +195,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -236,6 +248,7 @@
 				30C1C93216C13F000008F0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

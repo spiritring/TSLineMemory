@@ -7,15 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSClass.h"
+#import "TSString.h"
 
 int main(int argc, const char * argv[])
 {
-
     @autoreleasepool {
+        TSClass* pC = [TSClass new];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        [pC SetNSStr:@"haha"];
         
+        pC.TestP = [TSString new];
+        
+        NSLog(@"%ld", [pC.TestP retainCount]);
+        
+        TSString* pTest = pC.TestP;
+        
+        NSLog(@"%ld", [pTest retainCount]);
+        
+        [pC release];
+        
+        NSString* strList = @"1,2,3,344,5,6,7";
+        NSArray* list = [strList componentsSeparatedByString:@","];
+        for (int i = 0 ; i < [list count]; i++) {
+            NSLog(@"string:%@", [list objectAtIndex:i]);
+        }
     }
     return 0;
 }
